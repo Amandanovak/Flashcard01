@@ -35,7 +35,7 @@ for (let i = 0; i < checkbox.length; i++) {
     checkbox[i].onclick = geraSenha;
 }
 
-// Inicializa o ano atual de forma dinâmica no footer
+// Configura o ano dinamicamente no rodapé
 document.getElementById('ano-atual').textContent = new Date().getFullYear();
 
 geraSenha();
@@ -57,9 +57,9 @@ function geraSenha() {
     
     let senha = '';
     
-    // Evita loop infinito se nenhuma caixinha estiver marcada
+    // Proteção caso o utilizador desmarque todas as caixas
     if (alfabeto.length === 0) {
-        campoSenha.value = "Selecione uma opção";
+        campoSenha.value = "Escolha uma opção";
         forcaSenha.classList.remove('fraca','media','forte');
         document.querySelector('.entropia').textContent = "";
         return;
@@ -90,8 +90,8 @@ function classificaSenha(tamanhoAlfabeto){
     let dias = Math.floor(2**entropia / (100e6 * 60 * 60 * 24));
     
     if(dias < 1) {
-        valorEntropia.textContent = "Um computador pode descobrir essa senha quase instantaneamente.";
+        valorEntropia.textContent = "Um computador pode descobrir esta senha quase instantaneamente.";
     } else {
-        valorEntropia.textContent = "Um computador pode levar até " + dias + " dias para descobrir essa senha.";
+        valorEntropia.textContent = "Um computador pode levar até " + dias + " dias para descobrir esta senha.";
     }
 }
