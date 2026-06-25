@@ -25,18 +25,17 @@ body{
 }
 
 .imagem-moana {
-    max-width: 150px;
+    max-width: 250px;              /* Tamanho ideal para destacar os detalhes do cadeado */
     height: auto;
-    border-radius: 50%;
-    border: 4px solid var(--borda);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.5)); /* Destaque tridimensional */
+    margin-bottom: 15px;
 }
 
 .titulo-principal{
     font-family: var(--roboto-mono);
     font-size: 32px;
     font-weight: 700;
-    color: #00f2fe; /* Azul ciano brilhante */
+    color: #00f2fe;                /* Azul ciano brilhante */
 }
 
 .titulo-secundario{
