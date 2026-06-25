@@ -27,8 +27,8 @@ body{
 .moana.JPG {
     max-width: 10px;              /* Tamanho ideal para destacar os detalhes do cadeado */
     height: auto;
-    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.5)); /* Destaque tridimensional */
-    margin-bottom: 15px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5)); /* Destaque tridimensional */
+    margin-bottom: 5px;
 }
 
 .titulo-principal{
